@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtma berish</title>
+</head>
+<body>
+    <h1>Slayd, Maqola, Kurs Ishi Buyurtma berish</h1>
+    <form action="/submit_order" method="POST">
+        <label for="service">Xizmatni tanlang:</label>
+        <select id="service" name="service">
+            <option value="article">Maqola</option>
+            <option value="slide">Slayd</option>
+            <option value="coursework">Kurs ishi</option>
+        </select><br><br>
+        
+        <label for="name">Ismingiz:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Aloqa raqami:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <input type="submit" value="Buyurtma berish">
+    </form>
+</body>
+</html>
